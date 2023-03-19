@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KODAK_ListPage</title>
+		<link rel="shortcut icon" href="/img/kodak_favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/img/kodak_favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="../js/prefixfree.min.js"></script>
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/jquery-migrate-3.3.2.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/sub.js"></script>
+
+	</head>
+	<body>
+		<!--헤더시작-->
+			<header id="sub_header">
+				<div>
+					<ul class="lnb_list">
+						<li>
+							<span></span>
+							<a href="#"><img src="../img/main/user.png" alt="마이페이지 아이콘"></a>
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Join</a></li>
+								<li><a href="#">My page</a></li>
+							</ul>
+						</li><!--마이메뉴-->
+						<li><a href="#"><img src="../img/main/cart.png" alt="장바구니 아이콘"></a></li><!--장바구니-->
+						<li>
+							<a href="#"><img src ="../img/main/search.png" alt="검색창 아이콘"></a>
+							<div><input type="text" value="상품 검색"></div>
+						</li><!--검색창-->
+					</ul><!--lnb-->
+					<div id="popup">
+						<div><img src="" alt=""></div>
+					</div><!--popup-->
+				</div><!--lnb&팝업창-->
+
+				<!--LOGO-->
+				<div>
+					<h1>코닥어패럴</h1>
+					<div class="sub_logo"><a href="../index.html"><img src="../img/main/logo1.png" alt="코닥어패럴로고"></a></div>
+				</div><!--LOGO끝-->
+
+				<!--GNB-->
+				<div>
+					<div>
+						<ul id="sub_gnb" class="gnb_list clearfix">
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">BRAND</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">SHOP</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">LOOKBOOK</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">EVENT</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">CS</a>
+							</li>
+						</ul>
+					</div><!--1dept-->
+
+					<div id="sub_gnb2">
+						<div>
+							<ul>
+								<li><a href="#">Story</a></li>
+								<li><a href="#">Stockist</a></li>
+							</ul><!--브랜드하위메뉴-->
+							<ul>
+								<li><a href="#">New</a></li>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Outer</a></li>
+								<li><a href="#">Top</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Shoes</a></li>
+								<li><a href="#">Acc</a></li>
+								<li><a href="#">Etc</a></li>
+							</ul><!--SHOP하위메뉴-->
+							<ul>
+								<li><a href="#">2021 outer</a></li>
+								<li><a href="#">2021 express</a></li>
+								<li><a href="#">Kodak Style</a></li>
+							</ul><!--LOOKBOOK하위메뉴-->
+							<ul>
+								<li><a href="#">Notice</a></li>
+								<li><a href="#">Q&A</a></li>
+							</ul><!--CS하위메뉴-->
+						</div>
+					</div><!--2dept-->
+				</div><!--GNB끝-->
+
+			</header><!--헤더끝-->
+
+
+			<!--상단 이미지-->
+			<div class="list_banner"></div>
+
+
+			<!--리스트페이지 미니 네비=-->
+			<div class="list_nav">
+				<div class="wrapper">
+					<span></span>
+					<span><a href="#">SHOP</a>&nbsp;&nbsp;</span><span>&gt;&nbsp;&nbsp;</span><span><a href="#">OUTER</a></span>
+				</div>
+			</div>
+
+
+			<div id="bestThumb">
+				<div class="wrapper">
+					<h2>BEST ITEM</h2><!--타이틀-->
+					<div class="clearfix">
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/best1.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>BEST</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>메일러 다운 파카 KHAKI</span><br><span>KRW 399,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/best1_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/best2.png" alt="브라우니 숏 자켓"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>BEST</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>브라우니 숏 자켓 KHAKI</span><br><span>KRW 329,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/best2_1.png" alt="브라우니 숏자켓 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/best3.png" alt="케이 헤비다운 자켓"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>BEST</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>케이 헤비 다운 자켓 BLACK</span><br><span>KRW 379,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/best3_1.png" alt="케이헤비다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/best4.png" alt="미니로고 플리스 자켓"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>BEST</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>미니로고 플리스 자켓 BEIGE</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/best4_1.png" alt="미니로고 플리스 자켓상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/best5.png" alt="메일러 플리스 자켓"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>BEST</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>메일러 플리스 자켓 CHARCOAL</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/best5_1.png" alt="메일러 플리스 상세사진"></a></div>
+						</div>
+					</div><!--썸네일들-->
+				</div><!--wrapper-->
+			</div><!--베스트상품-->
+
+
+
+			<div id="outerThumb">
+				<div class="wrapper">
+					<h2>OUTER</h2><!--타이틀-->
+					<div>
+						<select id="list_sel">
+							<option value="none">선택하세요</option>
+							<option value="new">신상품순</option>
+							<option value="best">인기상품순</option>
+							<option value="low cost">낮은금액순</option>
+							<option value="high cost">높은금액순</option>
+						</select>
+					</div><!--선택정렬-->
+					<div class="clearfix">
+						<div>
+							<div>
+								<a href="#"><img src="../img/list/outer1.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>NEW</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>코다크롬 플리스 자켓 KHAKI</span><br><span>KRW 199,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer1_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer2.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>NEW</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>코다크롬 플리스 자켓 SKY BLUE</span><br><span>KRW 199,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer2_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer3.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>NEW</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>메일러 플리스 자켓 IVORY</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer3_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer4.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<div>
+								<div></div><!--보더용-->
+								<span>NEW</span>
+							</div><!--베스트로고-->
+							<div>
+								<span>메일러 플리스 자켓 BLUE</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer4_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer5.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>크롬 마이크로 플리스 우먼 YELLOW</span><br><span>KRW 129,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer5_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer6.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>크롬 마이크로 플리스 우먼 BLUE</span><br><span>KRW 129,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer6_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer7.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>플러스 아노락 KHAKI</span><br><span>KRW 189,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer7_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer8.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>디아고날 다운 자켓 PINK</span><br><span>KRW 379,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer8_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer9.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>디아고날 다운 자켓 LIGHT GREY</span><br><span>KRW 379,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer9_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer10.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>브라우니 에코 퍼 자켓 우먼 BROWN</span><br><span>KRW 279,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer10_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer11.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>브라우니 에코 퍼 자켓 우먼 BLACK</span><br><span>KRW 279,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer11_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer12.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>비전3 봄버 다운 자켓 GREY</span><br><span>KRW 419,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer12_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer13.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>케이자켓 LIGHT BLUE</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer13_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer14.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>케이자켓 NAVY</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer14_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer15.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>익스프레스 우븐 아노락 BEIGE</span><br><span>KRW 179,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer15_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="../detail/index.html"><img src="../img/list/outer16.png" alt="메일러 다운 파카"></a>
+							</div><!--상품사진-->
+							<ul></ul><!--베스트로고-->
+							<div>
+								<span>컬러플러스 숏 다운 자켓</span><br><span>KRW 359,000</span>
+							</div><!--상품명+금액-->
+							<div><a href="../detail/index.html"><img src="../img/list/outer16_1.png" alt="메일러다운 상세사진"></a></div>
+						</div>
+					</div>
+				</div><!--wrapper-->
+			</div><!--outer상품-->
+
+			<div id="listPager">
+				<div class="wrapper clearfix">
+					<div>
+						<div>
+							<div class="pageBold"><a href="#">1</a></div>
+							<div class="pageBar"></div>
+						</div>
+						<div>
+							<div><a href="#">2</a></div>
+							<div></div>
+						</div>
+						<div>
+							<div><a href="#">3</a></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div><!--페이지-->
+
+
+
+
+			<div id="topbtn">
+				<div class="wrapper">
+					<div><a href="#gnb"><img src="../img/main/topbtn.png" alt="탑버튼 아이콘"></a></div>
+				</div>
+			</div><!--top버튼-->
+
+
+
+
+		<!--푸터 시작-->
+		<footer id="sub_footer">
+			<div class="wrapper">
+				<div>
+					<span>CUSTOMER CENTER</span><br><br>
+					<span>+82 031-8060-0290</span><br><br><br>
+					<span>MON-FRI 10:00-18:00<br>support@hibs.co.kr<br><br>Sales team (대리점문의)<br>: +82 031-8060-0291</span>
+				</div>
+				<div>
+					<span>BANK INFO</span><br><br>
+					<span>계좌번호 : 하나은행 439-910024-02604</span><br>
+					<span>예금주 : 주식회사 하이라이트브랜즈</span>
+				</div>
+				<div>
+					<span>DELIVERY</span><br><br>
+					<span>반품배송지<br>: 경기도 안산시 단원구 시화호수로835 로지스밸리 3층</span>
+				</div>
+				<div class="clearfix">
+					<div><img src="../img/main/kakao.png" alt="카카오플러스친구아이콘"></div>
+					<div><img src="../img/main/instagram.png" alt="인스타그램아이콘"></div>
+					<div><img src="../img/main/facebook.png" alt="페이스북아이콘"></div>
+				</div><!--sns아이콘-->
+				<div>
+					<span>ABOUT</span>
+					<span>COMPANY</span>
+					<span>TERMS OF USE</span>
+					<span>PRIVACY POLICY</span>
+				</div>
+				<div>
+					<span>Hilight Brands  (주)하이라이트 브랜즈<br>CEO. Jun Kwon Lee  Business License No. 788-81-01239  Mail Order Business Registration. No. 2019-성남분당B-0523<br>
+					Address. PDC Building A-Dong 8F, 242, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi, Korea</span>
+					<span>&copy; 2020 Hilight Brands.</span>
+				</div>
+			</div>
+		</footer><!--푸터 끝-->
+
+
+
+
+
+
+	</body>
+</html>
