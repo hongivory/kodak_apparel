@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KODAK_orderPage</title>
+		<link rel="shortcut icon" href="/img/kodak_favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/img/kodak_favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="../js/prefixfree.min.js"></script>
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/jquery-migrate-3.3.2.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/sub.js"></script>
+
+	</head>
+	<body>
+		<!--헤더시작-->
+			<header id="sub_header">
+				<div>
+					<ul class="lnb_list">
+						<li>
+							<span></span>
+							<a href="#"><img src="../img/main/user.png" alt="마이페이지 아이콘"></a>
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Join</a></li>
+								<li><a href="#">My page</a></li>
+							</ul>
+						</li><!--마이메뉴-->
+						<li><a href="#"><img src="../img/main/cart.png" alt="장바구니 아이콘"></a></li><!--장바구니-->
+						<li>
+							<a href="#"><img src ="../img/main/search.png" alt="검색창 아이콘"></a>
+							<div><input type="text" value="상품 검색"></div>
+						</li><!--검색창-->
+					</ul><!--lnb-->
+					<div id="popup">
+						<div><img src="" alt=""></div>
+					</div><!--popup-->
+				</div><!--lnb&팝업창-->
+
+				<!--LOGO-->
+				<div>
+					<h1>코닥어패럴</h1>
+					<div class="sub_logo"><a href="../index.html"><img src="../img/main/logo1.png" alt="코닥어패럴로고"></a></div>
+				</div><!--LOGO끝-->
+
+				<!--GNB-->
+				<div>
+					<div>
+						<ul id="sub_gnb" class="gnb_list clearfix">
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">BRAND</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="../list/index.html">SHOP</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">LOOKBOOK</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">EVENT</a>
+							</li>
+							<li>
+								<div></div><!--빨간원-->
+								<a href="#">CS</a>
+							</li>
+						</ul>
+					</div><!--1dept-->
+
+					<div id="sub_gnb2">
+						<div>
+							<ul>
+								<li><a href="#">Story</a></li>
+								<li><a href="#">Stockist</a></li>
+							</ul><!--브랜드하위메뉴-->
+							<ul>
+								<li><a href="../list/index.html">New</a></li>
+								<li><a href="../list/index.html">All</a></li>
+								<li><a href="../list/index.html">Outer</a></li>
+								<li><a href="#">Top</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Shoes</a></li>
+								<li><a href="#">Acc</a></li>
+								<li><a href="#">Etc</a></li>
+							</ul><!--SHOP하위메뉴-->
+							<ul>
+								<li><a href="#">2021 outer</a></li>
+								<li><a href="#">2021 express</a></li>
+								<li><a href="#">Kodak Style</a></li>
+							</ul><!--LOOKBOOK하위메뉴-->
+							<ul>
+								<li><a href="#">Notice</a></li>
+								<li><a href="#">Q&A</a></li>
+							</ul><!--CS하위메뉴-->
+						</div>
+					</div><!--2dept-->
+				</div><!--GNB끝-->
+
+			</header><!--헤더끝-->
+
+
+
+			<!--주문페이지 -->
+			<div id="order">
+				<div class="wrapper">
+					<div><span></span><span>주문하기</span></div>
+					<div class="order_wrapper">
+
+						<!--주문정보섹션시작-->
+						<div class="order_inform">
+							<div>
+								<span>주문자 정보</span>
+								<div><span></span><span>필수입력</span></div>
+							</div>
+							<div class="order_line"></div><!--구분선1-->
+							<div>
+								<span>주문자 이름</span>
+								<span class="order_name">홍상아</span>
+							</div><!--주문자이름-->
+							<div>
+								<span>이메일</span>
+								<span></span><!--필수입력용 원-->
+								<input type="text" value="sangah1116">
+								<span>@</span>
+								<input type="text" value="naver.com">
+								<select class="mail_select">
+									<option value="">직접입력</option>
+									<option value="naver.com">naver.com</option>
+									<option value="hanmail.net">hanmail.net</option>
+									<option value="gmail.com">gmail.com</option>
+									<option value="nate.com">nate.com</option>
+								</select>
+								<span>* 주문내역이 이메일로 발송됩니다.</span>
+							</div><!--이메일인풋-->
+							<div class="order_phonenum">
+								<span>휴대폰번호</span>
+								<span></span><!--필수입력용 원-->
+								<input type="text" value="010" class="grayBg" disabled="disabled">
+								<input type="text" value="2050" class="grayBg" disabled="disabled">
+								<input type="text" value="6332" class="grayBg" disabled="disabled">
+								<button>변경하기</button>
+							</div><!--휴대폰번호인풋-->
+							<div class="order_adress">
+								<span>주소</span>
+								<input type="text" value="" class="grayBg">
+								<button>주소찾기</button><br>
+								<input type="text" value="" class="grayBg"><br>
+								<input type="text" value="">
+							</div><!--주소찾기 인풋-->
+							<div class="order_line"></div><!--구분선2-->
+							<div>
+								<span>* 회원가입 시 정보와 다른 경우 지금 기재하신 내용으로 회원정보를 변경하실 수 있습니다.</span>
+								<input type="checkbox">
+								<span>위 내용으로 회원정보 수정</span>
+							</div>
+						</div><!--주문정보섹션 끝-->
+
+						<!--배송정보섹션 시작-->
+						<div class="track_inform">
+							<div>
+								<span>배송 정보</span>
+								<input type="checkbox">
+								<span>주문자와 동일합니다.</span>
+								<div><span></span><span>필수입력</span></div>
+							</div>
+							<div class="order_line"></div><!--구분선1-->
+							<div>
+								<span>받으실 분 이름</span>
+								<span></span><!--필수입력용 원-->
+								<input type="text" value="" class="track_name">
+								<button>배송 주소록</button>
+							</div><!--받는사람이름-->
+							<div class="track_phonenum">
+								<span>휴대폰번호</span>
+								<span></span><!--필수입력용 원-->
+								<select>
+									<option value="select">선택</option>
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="017">017</option>
+									<option value="019">019</option>
+								</select>
+								<input type="text" value="">
+								<input type="text" value="">
+							</div><!--휴대폰번호-->
+							<div>
+								<span>다른 전화번호</span>
+								<select>
+									<option value="select">선택</option>
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="017">017</option>
+									<option value="019">019</option>
+								</select>
+								<input type="text" value="">
+								<input type="text" value="">
+							</div><!--다른 전화번호-->
+							<div class="track_adress">
+								<span>배송지 주소</span>
+								<span></span><!--필수입력용 원-->
+								<input type="text" value="" class="grayBg">
+								<button>주소찾기</button>
+								<input type="checkbox">
+								<span>배송지 주소록에 추가</span><br>
+								<input type="text" value="" class="grayBg"><br>
+								<input type="text" value="">
+							</div><!--주소찾기 인풋-->
+							<div class="track_req">
+								<span>배송 시 요청사항</span>
+								<textarea>택배 기사님께 전달하는 내용입니다. (0/50자)</textarea>
+							</div><!--배송 요청사항-->
+							<div class="order_line"></div><!--구분선2-->
+						</div><!--배송정보섹션 끝-->
+
+						<!--결제정보섹션 시작-->
+						<div class="pay_inform">
+							<div>
+								<span>결제 정보</span>
+							</div>
+							<div class="order_line"></div><!--구분선1-->
+							<div class="clearfix">
+								<div>
+									<div><span class="payment_circle"></span></div>
+									<span>카드결제</span>
+								</div>
+								<div>
+									<div><span></span></div>
+									<span>무통장 입금</span>
+								</div>
+								<div>
+									<div><span></span></div>
+									<span>페이코</span>
+								</div>
+								<div>
+									<div><span></span></div>
+									<span>카카오페이</span>
+								</div>
+								<div>
+									<div><span></span></div>
+									<span>네이버페이</span>
+								</div>
+							</div><!--결제수단들-->
+							<div class="cards clearfix">
+								<div>
+									<span>카드종류</span>
+									<select>
+										<option value="select">카드선택</option>
+										<option value="kb">국민카드</option>
+										<option value="samsung">삼성카드</option>
+										<option value="hyundai">현대카드</option>
+										<option value="shinhan">신한카드</option>
+									</select>
+								</div>
+								<div>
+									<span>할부기간</span>
+									<select>
+										<option value="select">일시불</option>
+										<option value="2month">2개월</option>
+										<option value="3month">3개월</option>
+										<option value="4month">4개월</option>
+										<option value="5month">5개월</option>
+									</select>
+								</div>
+								<span><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i> 무이자 혜택</a></span>
+							</div><!--카드선택 박스-->
+							<div class="pay_agree">
+								<input type="checkbox">
+								<span><a href="#">(필수) 구매동의</a></span>
+							</div><!--구매동의-->
+						</div><!--결제정보섹션 끝-->
+
+						<div class="payment">
+							<div>
+								<input type="checkbox" checked="checked">
+								<span>선택한 결제수단을 다음에도 사용</span>
+							</div>
+							<button class="order_btn">
+								<div></div>
+								<span><a href="./success.html">결제하기</a></span>
+							</button>
+						</div>
+					</div>
+				</div><!--wrapper-->
+			</div>
+
+
+
+			<div id="select_box">
+				<div>
+					<div>
+						<div>
+							<div><img src="../img/detail/detail_thumb1.png" alt=""></div><!--상품썸네일-->
+							<span>케이 플리스 자켓 (RED)</span>
+							<div>
+								<span>사이즈</span>&nbsp;<span>L</span>&nbsp;
+								<span>/</span>&nbsp;
+								<span>수량</span>&nbsp;<span>1</span>&nbsp;<span>개</span>
+							</div>
+							<div>
+								<span>189,000</span><span>원</span>
+							</div>
+						</div>
+					</div><!--선택상품박스-->
+					<div><span>총 주문 상품 :&nbsp;&nbsp;</span><span>1</span><span>개</span></div><!--수량텍스트-->
+					<div class="payment_box">
+						<div>
+							<div><span>총 주문 가격 :</span><span>189,000</span> <span>원</span></div>
+							<div></div><!--구분선-->
+							<div><span>할인 :</span><span>0</span> <span>원</span></div>
+							<div></div><!--구분선-->
+							<div><span>쿠폰 :</span><span class="coupon_price">0</span> <span>원</span></div>
+							<button class="coupon_btn">
+								<div></div>
+								<span>쿠폰 적용하기</span>
+							</button>
+							<div><span>배송비 :</span><span>0</span><span>원</span></div>
+							<div></div><!--굵은구분선-->
+							<div><span>총 결제 금액 :</span><span class="total_price">189,000</span> <span>원</span></div>
+						</div>
+					</div><!--결제박스-->
+				</div>
+			</div><!--sticky옵션박스-->
+
+
+			<div id="coupon_pop">
+				<div>
+					<div>
+						<span>COUPON</span>
+						<span><i class="fa fa-times" aria-hidden="true"></i></span><!--닫기-->
+						<span>해당 상품에 적용 가능한 쿠폰입니다.</span>
+						<div>
+							<hr><!--구분선-->
+							<div class="clearfix">
+								<div><span></span></div>
+								<div>신규회원가입 할인쿠폰</div>
+								<div>5,000원</div>
+								<div class="new_user">선택</div>
+								<div></div>
+							</div>
+							<hr><!--구분선-->
+						</div>
+					</div>
+				</div>
+			</div><!--쿠폰 선택 팝업창-->
+
+
+
+			<!--탑버튼-->
+			<div id="topbtn">
+				<div class="wrapper">
+					<div><a href="#gnb"><img src="../img/main/topbtn.png" alt="탑버튼 아이콘"></a></div>
+				</div>
+			</div><!--top버튼-->
+
+
+
+
+		<!--푸터 시작-->
+		<footer id="sub_footer">
+			<div class="wrapper">
+				<div>
+					<span>CUSTOMER CENTER</span><br><br>
+					<span>+82 031-8060-0290</span><br><br><br>
+					<span>MON-FRI 10:00-18:00<br>support@hibs.co.kr<br><br>Sales team (대리점문의)<br>: +82 031-8060-0291</span>
+				</div>
+				<div>
+					<span>BANK INFO</span><br><br>
+					<span>계좌번호 : 하나은행 439-910024-02604</span><br>
+					<span>예금주 : 주식회사 하이라이트브랜즈</span>
+				</div>
+				<div>
+					<span>DELIVERY</span><br><br>
+					<span>반품배송지<br>: 경기도 안산시 단원구 시화호수로835 로지스밸리 3층</span>
+				</div>
+				<div class="clearfix">
+					<div><img src="../img/main/kakao.png" alt="카카오플러스친구아이콘"></div>
+					<div><img src="../img/main/instagram.png" alt="인스타그램아이콘"></div>
+					<div><img src="../img/main/facebook.png" alt="페이스북아이콘"></div>
+				</div><!--sns아이콘-->
+				<div>
+					<span>ABOUT</span>
+					<span>COMPANY</span>
+					<span>TERMS OF USE</span>
+					<span>PRIVACY POLICY</span>
+				</div>
+				<div>
+					<span>Hilight Brands  (주)하이라이트 브랜즈<br>CEO. Jun Kwon Lee  Business License No. 788-81-01239  Mail Order Business Registration. No. 2019-성남분당B-0523<br>
+					Address. PDC Building A-Dong 8F, 242, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi, Korea</span>
+					<span>&copy; 2020 Hilight Brands.</span>
+				</div>
+			</div>
+		</footer><!--푸터 끝-->
+
+
+
+
+	</body>
+</html>
